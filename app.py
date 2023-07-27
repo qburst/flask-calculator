@@ -29,8 +29,7 @@ def calculate():
         result = float(number_one) / float(number_two)
         return render_template("calculator.html", result=result)
 
-    else:
-        return render_template("calculator.html")
+    return render_template("calculator.html")
 
 
 @app.errorhandler(404)
